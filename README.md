@@ -11,6 +11,8 @@ __Prerequisites__
 
 * node/npm
 
+If you need help getting these installed try this resource https://changelog.com/install-node-js-with-homebrew-on-os-x/
+
 __Install__
 
 ```
