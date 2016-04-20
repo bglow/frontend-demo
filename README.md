@@ -4,6 +4,10 @@ Frontend Demo
 This is a simple app for testing front end javascript. You can serve static json files, and define mapping functions to simulate how
 to handle data coming from the server should be transformed to the frontend model layer.
 
+__Prerequisites__
+
+* node/npm
+
 __Install__
 
 ```
@@ -36,6 +40,28 @@ __Css__
 
 Css is compiled using the node sass preprocessor.
 The current custom.html loads the distribution custom.css. While running the server you can modify the sass partials under custom/css and then import them into custom/main.scss, then rebuild and your new styles will be available on custom.html.
+
+For example if you had the file _custom.scss like
+
+```
+.form {
+    label {
+        font-weight: bold;
+    }
+}
+```
+
+and main.scss like
+
+```
+@import "css/_custom.scss";
+```
+
+Then you will get the output custom.css
+```
+.form label {
+  font-weight: bold; }
+```
 
 __js__
 
@@ -91,7 +117,7 @@ Frontend.setConstant('exampleForm', {
 });
 ```
 
-Altogether now, using the Handlebars templating framework as an example for testing.
+Altogether now, using the Handlebars templating framework as an example for vendor integration testing.
 
 ```
 var Handlebars = require('Handlebars');

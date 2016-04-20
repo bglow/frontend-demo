@@ -1,1 +1,4 @@
 /* import your sass partials here*/
+/* placeholder custom sass partial */
+.form label {
+  font-weight: bold; }
