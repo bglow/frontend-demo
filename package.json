@@ -1,0 +1,15 @@
+{
+  "name": "frontend-demo",
+  "version": "0.0.1",
+  "dependencies": {
+    "handlebars": "^4.0.5",
+    "jquery": "^2.2.3",
+    "lodash": "^4.11.1"
+  },
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-browserify": "^5.0.0",
+    "grunt-cli": "^1.2.0",
+    "grunt-sass": "^1.1.0"
+  }
+}

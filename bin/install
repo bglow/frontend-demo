@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+cd ../
+npm install -g http-server
+npm install
+cd bin

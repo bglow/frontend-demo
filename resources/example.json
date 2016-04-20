@@ -1,0 +1,12 @@
+[
+  {
+    "name":"item 1",
+    "description":"the first item",
+    "count":1
+  },
+  {
+    "name":"item 2",
+    "description":"the second item",
+    "count":2
+  }
+]
