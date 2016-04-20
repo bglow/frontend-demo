@@ -122,7 +122,30 @@ Frontend.setConstant('exampleForm', {
 });
 ```
 
-Altogether now, using the Handlebars templating framework as an example for vendor integration testing.
+__json__
+
+Place json resources in the resources directory and then reference them by filename in `Frontend.getResource()`. For example
+
+```
+[
+  {
+    "name":"item 1",
+    "description":"the first item",
+    "count":1
+  },
+  {
+    "name":"item 2",
+    "description":"the second item",
+    "count":2
+  }
+]
+```
+
+Is retrieved and mapped through `exampleMapper` to produce `["item 1","item 2"]`.
+
+__Altogether now__
+
+To use all the features, consider this example integrating the Handlebars templating framework.
 
 ```
 var Handlebars = require('Handlebars');
