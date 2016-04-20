@@ -115,6 +115,7 @@ var Frontend = require('../core/Frontend.js');
 
 Frontend.setConstant('exampleForm', {
     formName: 'exampleForm',
+    formLegend: 'Example Form',
     fields: [
         {
             name: 'id',

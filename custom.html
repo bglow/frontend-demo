@@ -5,15 +5,24 @@
     <link rel="stylesheet" type="text/css" href="dist/custom.css"/>
 </head>
 <body>
+<h4>If you're seeing this, it means your http server is running.</h4>
+<hr>
+<br>
+<br>
+<br>
 <div id="custom-form" class="hidden">
     <div class="form">
+        <legend>{{formLegend}}</legend>
+        <fieldset>
         {{#each fields}}
             <label class="{{class}}">{{label}}</label>
             <input type="{{type}}" name="{{name}}" class="{{class}}"></input>
         {{/each}}
+        </fieldset>
     </div>
 </div>
 <div id="custom-list" class="hidden">
+    <h4>Custom List</h4>
     <ul>
     {{#each items}}
         <li>{{this}}</li>

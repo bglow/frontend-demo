@@ -4,6 +4,9 @@ Frontend Demo
 This is a simple app for testing front end javascript. You can serve static json files, and define mapping functions to simulate how
 to handle data coming from the server should be transformed to the frontend model layer.
 
+You can run the server, change the html, and change the data at runtime and view the changes immediately by reloading the page in 
+your browser. Use the file 'custom.html' as a template for going forward.
+
 __Prerequisites__
 
 * node/npm
