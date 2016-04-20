@@ -18,6 +18,9 @@ cd bin
 ./build
 ```
 
+The application is build with the grunt task runner. You can view the build configuration in 'gruntfile.js' in order to see how to modify, or add 
+code.
+
 __Server__
 
 ```
@@ -85,6 +88,27 @@ Frontend.setConstant('exampleForm', {
             "class": 'numeric'
         }
     ]
+});
+```
+
+Altogether now, using the Handlebars templating framework as an example for testing.
+
+```
+var Handlebars = require('Handlebars');
+var Frontend = require('../core/Frontend.js');
+
+var exampleFormRenderer = Handlebars.compile($('#custom-form').html());
+
+var renderedFormHtml = exampleFormRenderer(Frontend.getConstant('exampleForm'));
+
+$(".app").append(renderedFormHtml);
+
+var exampleListRenderer = Handlebars.compile($('#custom-list').html());
+
+Frontend.getResource('example.json','exampleMapper')
+.then(function (names) {
+    var renderedListHtml = exampleListRenderer({items: names});
+    $(".app").append(renderedListHtml);
 });
 ```
 
