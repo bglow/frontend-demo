@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
 cd ../
-npm install -g http-server
+sudo npm install -g http-server grunt grunt-cli
 npm install
 cd bin
