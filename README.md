@@ -41,6 +41,19 @@ cd bin
 
 Then open your browser to localhost:8080/custom.html
 
+__Watch__
+
+Once serving, you can rebuild upon file change by opening a second terminal and running
+
+```
+cd bin
+./watch
+```
+
+You should see output in that terminal window indicating which file was changed. The watch task responds to changes in js and scss in
+the current directory structure. If you change where your files are stored, you may have to update the watch task in the gruntfile
+to take those directories into account.
+
 ## How to use for testing customizations
 
 __Css__
