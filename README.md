@@ -14,6 +14,8 @@ __Prerequisites__
 If you need help getting these installed try this resource https://changelog.com/install-node-js-with-homebrew-on-os-x/
 
 __Install__
+(You will need sudo privleges to install and build with these scripts because they require npm global packages. If you do not have sudo, you can 
+still serve from the distribution files, but you will need to modify the grunt build to reference a local grunt installation.)
 
 ```
 cd bin 
