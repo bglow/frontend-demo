@@ -1,3 +1,4 @@
 #!/usr/bin/env bash
 
-http-server ../
+NODE_ROOT=$(npm -g root)
+$NODE_ROOT/http-server/bin/http-server ../

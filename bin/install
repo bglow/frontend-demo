@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 
 cd ../
-sudo npm install -g http-server grunt grunt-cli
+# some issues have been reported if grunt-cli is not installed prior to grunt
+sudo npm install -g http-server grunt-cli
+sudo npm install -g grunt
 npm install
 cd bin

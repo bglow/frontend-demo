@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 
 cd ../
-grunt build
+NODE_ROOT=$(npm -g root)
+$NODE_ROOT/grunt/bin/grunt build
 cd bin
