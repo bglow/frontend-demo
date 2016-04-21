@@ -29,11 +29,18 @@ module.exports = function (grunt) {
                   "dist/custom.css":["custom/main.scss"]
               }
           }
+      },
+      watch: {
+          scripts: {
+              files: ['core/*.js','core/*.scss','core/css/*.scss','custom/*.js','custom/*.scss','custom/css/*.scss'],
+              tasks: ['build']
+          }
       }
    });
 
     grunt.loadNpmTasks('grunt-sass');
     grunt.loadNpmTasks('grunt-browserify');
+    grunt.loadNpmTasks('grunt-contrib-watch');
 
     grunt.registerTask("build", ["sass:dist","browserify:dist","sass:custom","browserify:custom"]);
 

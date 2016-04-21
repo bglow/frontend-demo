@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+cd ../
+NODE_ROOT=$(npm -g root)
+$NODE_ROOT/grunt/bin/grunt watch
+cd bin
